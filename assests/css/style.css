@@ -13,7 +13,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
+    display: inline; /*tells the element to convert to an inline element from a block element*/
 }
 
 header a {
@@ -22,22 +22,45 @@ header a {
 }
 
 header nav {
-    float: right;
+    float: right; /*places elements at specfic spots of the container to allow inline elements to wrap around*/
     margin: 7px 0;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline; /*tells the element to convert to an inline element from a block element*/
 }
 
 header nav ul li a {
     margin: 0 30px;
-    font-weight: lighter;
+    font-weight: lighter; /*Bolding, Underlines, Strike Through, etc...*/
     font-size: 22px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
 
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;   /*tells the element to convert to an inline element from a block element*/
+    line-height: 1.5;   /*spacing between the text*/
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
+
+* { /*Universal Selector*/
+    margin: 0;  /*remove margin and padding to align the header flush to the top of the page*/
+    padding: 0;
+    box-sizing: border-box; /*ignore padding*/
 }
