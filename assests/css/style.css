@@ -35,14 +35,22 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline; /*tells the element to convert to an inline element from a block element*/
+/* header nav ul li {
+    display: inline; /*tells the element to convert to an inline element from a block element
+} */
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*follows main axis: default horizontal unless changed with flex-direction(row|column)*/
+    align-items: center; /*follows the opposite of main axis: default verticle*/
+    list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter; /*Bolding, Underlines, Strike Through, etc...*/
-    font-size: 22px;
+    font-size: 1.55vw; /*viewport width*/
 }
 
 footer {
