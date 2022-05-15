@@ -1,7 +1,10 @@
-* { /*Universal Selector*/
-    margin: 0;  /*remove margin and padding to align the header flush to the top of the page*/
+* {
+    /*Universal Selector*/
+    margin: 0;
+    /*remove margin and padding to align the header flush to the top of the page*/
     padding: 0;
-    box-sizing: border-box; /*ignore padding*/
+    box-sizing: border-box;
+    /*ignore padding*/
 }
 
 body {
@@ -42,33 +45,40 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /*follows main axis: default horizontal unless changed with flex-direction(row|column)*/
-    align-items: center; /*follows the opposite of main axis: default verticle*/
+    justify-content: space-between;
+    /*follows main axis: default horizontal unless changed with flex-direction(row|column)*/
+    align-items: center;
+    /*follows the opposite of main axis: default verticle*/
     list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px;
-    font-weight: lighter; /*Bolding, Underlines, Strike Through, etc...*/
-    font-size: 1.55vw; /*viewport width*/
+    font-weight: lighter;
+    /*Bolding, Underlines, Strike Through, etc...*/
+    font-size: 1.55vw;
+    /*viewport width*/
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
 }
 
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;   /*tells the element to convert to an inline element from a block element*/
-    line-height: 1.5;   /*spacing between the text*/
+    /*float: right;   /*tells the element to convert to an inline element from a block element*/
+    line-height: 1.5;
+    /*spacing between the text*/
     text-align: right;
 }
 
@@ -82,24 +92,39 @@ section {
 
 /* Hero Style Start */
 .hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url("../images/flipped-hero-image.jpg");
-    height: 600px;
-    background-size: cover;/*shrinks the image so parts of it won't get covered*/
+    background-size: cover;
+    /*shrinks the image so parts of it won't get covered*/
     background-position: center;
-    position: relative;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 
 .hero-form {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -128,6 +153,7 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
+
 /* Hero Style End */
 
 .intro {
@@ -139,7 +165,8 @@ section {
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
-    margin: 0 auto; /*center text beneath What we do*/
+    margin: 0 auto;
+    /*center text beneath What we do*/
 }
 
 .steps {
@@ -193,7 +220,8 @@ section {
     margin: 0 auto 30px auto;
     background: #024e76;
     color: #fce138;
-    overflow: auto; /*allow parent element to be aware of child elements and stretches itself to contain them*/
+    overflow: auto;
+    /*allow parent element to be aware of child elements and stretches itself to contain them*/
 }
 
 .trainer img {
@@ -238,7 +266,7 @@ section {
 
 .contact h2 {
     color: #fce138;
-  }
+}
 
 .section-title {
     font-size: 55px;
@@ -251,7 +279,7 @@ section {
     padding: 0 100px 20px 100px;
 }
 
-.contact-info iframe{
+.contact-info iframe {
     width: 400px;
     height: 400px;
 }
@@ -271,7 +299,8 @@ section {
     font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20;
