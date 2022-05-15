@@ -12,6 +12,9 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -19,7 +22,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline; /*tells the element to convert to an inline element from a block element*/
+    /*display: inline; /*tells the element to convert to an inline element from a block element*/
 }
 
 header a {
@@ -28,7 +31,7 @@ header a {
 }
 
 header nav {
-    float: right; /*places elements at specfic spots of the container to allow inline elements to wrap around*/
+    /*float: right; /*places elements at specfic spots of the container to allow inline elements to wrap around*/
     margin: 7px 0;
 }
 
